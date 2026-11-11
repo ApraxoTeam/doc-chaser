@@ -1,0 +1,178 @@
+{
+  "id": "bookkeeping-onboarding",
+  "title": "Bookkeeping client onboarding request",
+  "industry": "tax",
+  "jurisdiction": "US",
+  "note": "A practice-derived starting list. Adjust it to the firm's own onboarding process.",
+  "sources": {
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "payroll": "Runs payroll",
+    "sales-tax": "Collects sales tax",
+    "inventory": "Carries inventory",
+    "loans": "Has loans or lines of credit",
+    "catch-up": "Books are behind and need catch-up work",
+    "contractors": "Pays contractors"
+  },
+  "sections": [
+    {
+      "name": "Entity and access",
+      "items": [
+        {
+          "id": "ein",
+          "label": "EIN confirmation letter and entity type",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "formation",
+          "label": "Formation documents and ownership breakdown",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "ledger-access",
+          "label": "Accountant access to the accounting software",
+          "detail": "An invited accountant user, not a shared password.",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "bank-access",
+          "label": "Read-only or statement access to each bank and credit card account",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "prior-returns",
+          "label": "Last two years of business tax returns",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "engagement",
+          "label": "Signed engagement letter",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Financial records",
+      "items": [
+        {
+          "id": "statements",
+          "label": "Bank and credit card statements since the last reconciled month",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "chart",
+          "label": "Chart of accounts and most recent trial balance",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "open-ar",
+          "label": "Open customer invoices (accounts receivable aging)",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "open-ap",
+          "label": "Unpaid vendor bills (accounts payable aging)",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "loan-docs",
+          "label": "Loan agreements and current statements",
+          "detail": "",
+          "when": [
+            "loans"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "fixed-assets",
+          "label": "Fixed asset list with purchase dates and costs",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "inventory",
+          "label": "Latest inventory count and valuation method",
+          "detail": "",
+          "when": [
+            "inventory"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "catch-up",
+          "label": "Statements and receipts for every unreconciled month",
+          "detail": "",
+          "when": [
+            "catch-up"
+          ],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Payroll, contractors and sales tax",
+      "items": [
+        {
+          "id": "payroll-reports",
+          "label": "Payroll provider access or year-to-date payroll reports",
+          "detail": "",
+          "when": [
+            "payroll"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "payroll-filings",
+          "label": "Most recent quarterly payroll tax filings",
+          "detail": "",
+          "when": [
+            "payroll"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "w9",
+          "label": "Form W-9 for each contractor",
+          "detail": "",
+          "when": [
+            "contractors"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "sales-tax",
+          "label": "Sales tax account details and most recent filings",
+          "detail": "",
+          "when": [
+            "sales-tax"
+          ],
+          "basis": "practice"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "agency-onboarding",
+  "title": "Agency client onboarding request",
+  "industry": "agency",
+  "jurisdiction": "General",
+  "note": "A practice-derived starting list for marketing, design and web agencies.",
+  "sources": {
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "website": "Work includes a website",
+    "paid-ads": "Work includes paid advertising",
+    "social": "Work includes social media",
+    "seo": "Work includes SEO or content",
+    "email": "Work includes email marketing",
+    "rebrand": "Work includes a new or revised brand"
+  },
+  "sections": [
+    {
+      "name": "Agreement and contacts",
+      "items": [
+        {
+          "id": "sow",
+          "label": "Signed statement of work or services agreement",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "contacts",
+          "label": "Main contact, approver and billing contact",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "billing",
+          "label": "Billing details and purchase order number, if one is needed",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Brand and content",
+      "items": [
+        {
+          "id": "brand",
+          "label": "Brand guidelines, logo files and fonts",
+          "detail": "Vector logo files where available.",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "audience",
+          "label": "Target audience, main competitors and goals for the work",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "existing",
+          "label": "Existing marketing materials and past campaign results",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "brand-history",
+          "label": "Notes on what must stay and what must change in the brand",
+          "detail": "",
+          "when": [
+            "rebrand"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "content",
+          "label": "Copy, photos and product information to be used",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Access",
+      "items": [
+        {
+          "id": "cms",
+          "label": "Website CMS and hosting access",
+          "detail": "A separate user account for the agency, not a shared password.",
+          "when": [
+            "website"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "domain",
+          "label": "Domain registrar and DNS access or a named contact",
+          "detail": "",
+          "when": [
+            "website"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "analytics",
+          "label": "Analytics and search console access",
+          "detail": "",
+          "when": [
+            "website",
+            "seo"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "ad-accounts",
+          "label": "Ad account access and billing owner",
+          "detail": "Granted through the platform's partner or agency access.",
+          "when": [
+            "paid-ads"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "social",
+          "label": "Social account access through each platform's business tools",
+          "detail": "",
+          "when": [
+            "social"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "esp",
+          "label": "Email platform access and a current list export",
+          "detail": "",
+          "when": [
+            "email"
+          ],
+          "basis": "practice"
+        }
+      ]
+    }
+  ]
+}

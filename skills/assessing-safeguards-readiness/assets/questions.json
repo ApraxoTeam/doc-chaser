@@ -1,0 +1,190 @@
+{
+  "source": {
+    "name": "FTC, Safeguards Rule: What Your Business Needs to Know",
+    "url": "https://www.ftc.gov/business-guidance/resources/ftc-safeguards-rule-what-your-business-needs-know"
+  },
+  "exemption": {
+    "citation": "16 CFR 314.6",
+    "text": "Section 314.4(b)(1), (d)(2), (h) and (i) do not apply to financial institutions that maintain customer information concerning fewer than five thousand consumers.",
+    "url": "https://www.law.cornell.edu/cfr/text/16/314.6"
+  },
+  "answers": [
+    "yes",
+    "partial",
+    "no",
+    "unknown"
+  ],
+  "questions": [
+    {
+      "id": "qualified-individual",
+      "citation": "16 CFR 314.4(a)",
+      "element": "Qualified Individual",
+      "question": "Is one named person designated to implement and supervise the information security program?",
+      "fix": "Name one person (an employee, or someone at a service provider with a senior person at the firm overseeing them) and record it in the written plan.",
+      "exempt_under_5000": false,
+      "priority": 1
+    },
+    {
+      "id": "risk-assessment-written",
+      "citation": "16 CFR 314.4(b)(1)",
+      "element": "Risk assessment",
+      "question": "Is there a written risk assessment with criteria for evaluating risks to customer information?",
+      "fix": "Write down where customer information lives, what could go wrong, and how each risk is rated and handled.",
+      "exempt_under_5000": true,
+      "priority": 1
+    },
+    {
+      "id": "risk-assessment-periodic",
+      "citation": "16 CFR 314.4(b)(2)",
+      "element": "Risk assessment",
+      "question": "Is the risk assessment repeated periodically and after changes?",
+      "fix": "Set a review date, at least yearly, and after any change of systems or providers.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "access-controls",
+      "citation": "16 CFR 314.4(c)(1)",
+      "element": "Safeguards",
+      "question": "Is access to customer information limited to people who need it, and reviewed periodically?",
+      "fix": "Give each person their own login, remove access when roles change, and review the access list on a schedule.",
+      "exempt_under_5000": false,
+      "priority": 1
+    },
+    {
+      "id": "inventory",
+      "citation": "16 CFR 314.4(c)(2)",
+      "element": "Safeguards",
+      "question": "Is there an inventory of the data held and the systems, devices and people that handle it?",
+      "fix": "List every system, device and storage location that holds customer information.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "encryption",
+      "citation": "16 CFR 314.4(c)(3)",
+      "element": "Safeguards",
+      "question": "Is customer information encrypted both when stored and when sent?",
+      "fix": "Turn on full-disk encryption, use an encrypted portal or encrypted email for client documents, or have the Qualified Individual approve an alternative control in writing.",
+      "exempt_under_5000": false,
+      "priority": 1
+    },
+    {
+      "id": "app-security",
+      "citation": "16 CFR 314.4(c)(4)",
+      "element": "Safeguards",
+      "question": "Is the security of the software used to handle customer information evaluated, whether built in-house or bought?",
+      "fix": "Review each vendor's security documentation before use and record the review.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "mfa",
+      "citation": "16 CFR 314.4(c)(5)",
+      "element": "Safeguards",
+      "question": "Is multi-factor authentication required for anyone accessing a system that holds customer information?",
+      "fix": "Turn on multi-factor authentication for every system that holds customer information, or have the Qualified Individual approve an equivalent control in writing.",
+      "exempt_under_5000": false,
+      "priority": 1
+    },
+    {
+      "id": "disposal",
+      "citation": "16 CFR 314.4(c)(6)",
+      "element": "Safeguards",
+      "question": "Is customer information securely disposed of no later than two years after it was last used, unless there is a business or legal reason to keep it?",
+      "fix": "Adopt a retention schedule, document the reasons for keeping older records, and dispose of the rest securely.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "change-management",
+      "citation": "16 CFR 314.4(c)(7)",
+      "element": "Safeguards",
+      "question": "Are changes to systems and networks evaluated for security impact before they are made?",
+      "fix": "Before adding or changing a system, device or provider, record a short security review.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "logging",
+      "citation": "16 CFR 314.4(c)(8)",
+      "element": "Safeguards",
+      "question": "Is user activity logged and monitored to detect unauthorized access?",
+      "fix": "Keep logging enabled on systems that hold customer information and review the logs on a schedule.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "testing",
+      "citation": "16 CFR 314.4(d)(1)",
+      "element": "Monitoring and testing",
+      "question": "Are the safeguards regularly tested or monitored to confirm they work?",
+      "fix": "Schedule regular checks: restore a backup, confirm patches, test that former staff cannot log in.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "pen-testing",
+      "citation": "16 CFR 314.4(d)(2)",
+      "element": "Monitoring and testing",
+      "question": "Is there continuous monitoring, or annual penetration testing plus vulnerability assessments every six months?",
+      "fix": "Arrange continuous monitoring, or an annual penetration test and six-monthly vulnerability scans, usually through an IT provider.",
+      "exempt_under_5000": true,
+      "priority": 2
+    },
+    {
+      "id": "training",
+      "citation": "16 CFR 314.4(e)",
+      "element": "Staff training",
+      "question": "Do all staff receive security awareness training, with refreshers?",
+      "fix": "Train everyone at hiring and at least yearly, and keep signed records.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "service-providers",
+      "citation": "16 CFR 314.4(f)",
+      "element": "Service providers",
+      "question": "Are service providers chosen for their ability to protect customer information, bound by contract to do so, and reassessed periodically?",
+      "fix": "List every provider with access to customer information, check each contract for security terms, and review them on a schedule.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "program-current",
+      "citation": "16 CFR 314.4(g)",
+      "element": "Program upkeep",
+      "question": "Is the security program updated when operations, staff or threats change, and after testing?",
+      "fix": "Review the written plan at least yearly and after any incident or material change.",
+      "exempt_under_5000": false,
+      "priority": 2
+    },
+    {
+      "id": "incident-response",
+      "citation": "16 CFR 314.4(h)",
+      "element": "Incident response",
+      "question": "Is there a written incident response plan covering roles, communications, remediation, documentation and a post-incident review?",
+      "fix": "Write a short plan: who decides, who is called, how systems are contained, who is notified, and how lessons are recorded.",
+      "exempt_under_5000": true,
+      "priority": 1
+    },
+    {
+      "id": "board-report",
+      "citation": "16 CFR 314.4(i)",
+      "element": "Reporting",
+      "question": "Does the Qualified Individual report in writing at least yearly to the board or a senior officer?",
+      "fix": "Have the Qualified Individual give the owner or board a written yearly report on the program and any incidents.",
+      "exempt_under_5000": true,
+      "priority": 3
+    },
+    {
+      "id": "breach-notice",
+      "citation": "16 CFR 314.4(j)",
+      "element": "Breach notification",
+      "question": "Does the firm know it must notify the FTC within 30 days of discovering unauthorized acquisition of unencrypted information of 500 or more consumers?",
+      "fix": "Add the FTC notification step and the 30-day deadline to the incident procedure.",
+      "exempt_under_5000": false,
+      "priority": 2
+    }
+  ]
+}

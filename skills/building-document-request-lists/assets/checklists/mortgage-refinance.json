@@ -1,0 +1,159 @@
+{
+  "id": "mortgage-refinance",
+  "title": "Mortgage refinance needs list",
+  "industry": "mortgage",
+  "jurisdiction": "US",
+  "note": "Income and asset items follow the CFPB loan application packet; property items are practice-derived. Lender, investor and loan-program rules add conditions.",
+  "sources": {
+    "cfpb": {
+      "name": "CFPB, Create a loan application packet",
+      "url": "https://www.consumerfinance.gov/owning-a-home/prepare/create-a-loan-application-packet/"
+    },
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "self-employed": "Self-employed borrower",
+    "other-income": "Has income besides wages",
+    "name-change": "Recent name change",
+    "hoa": "Property has a homeowners association",
+    "second-lien": "Has a second mortgage or HELOC",
+    "owns-property": "Owns other real estate"
+  },
+  "sections": [
+    {
+      "name": "Identity",
+      "items": [
+        {
+          "id": "id",
+          "label": "Proof of identity",
+          "detail": "Typically a driver's license or non-driver ID.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "ssn",
+          "label": "Social Security number",
+          "detail": "Send through the secure portal, never by plain email.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "name-change",
+          "label": "Name change documentation",
+          "detail": "",
+          "when": [
+            "name-change"
+          ],
+          "basis": "cfpb"
+        }
+      ]
+    },
+    {
+      "name": "Income and assets",
+      "items": [
+        {
+          "id": "paystubs",
+          "label": "Pay stubs for the last 30 days",
+          "detail": "",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "w2",
+          "label": "W-2 forms for the last two years",
+          "detail": "",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "tax-returns",
+          "label": "Signed federal tax returns for the last two years",
+          "detail": "All pages and schedules.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "other-income",
+          "label": "Documentation of other income sources",
+          "detail": "",
+          "when": [
+            "other-income"
+          ],
+          "basis": "cfpb"
+        },
+        {
+          "id": "business-returns",
+          "label": "Business tax returns and a year-to-date profit and loss statement",
+          "detail": "Lender-specific; confirm what the program requires.",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "bank-statements",
+          "label": "Two most recent bank statements",
+          "detail": "All pages.",
+          "when": [],
+          "basis": "cfpb"
+        }
+      ]
+    },
+    {
+      "name": "Current loan and property",
+      "items": [
+        {
+          "id": "mortgage-statement",
+          "label": "Most recent mortgage statement for the loan being refinanced",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "second-lien",
+          "label": "Statement for the second mortgage or HELOC",
+          "detail": "",
+          "when": [
+            "second-lien"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "insurance",
+          "label": "Homeowners insurance declarations page",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "property-tax",
+          "label": "Most recent property tax bill",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "hoa",
+          "label": "HOA statement and contact details",
+          "detail": "",
+          "when": [
+            "hoa"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "reo",
+          "label": "Mortgage statement, tax and insurance bills for each other property owned",
+          "detail": "",
+          "when": [
+            "owns-property"
+          ],
+          "basis": "practice"
+        }
+      ]
+    }
+  ]
+}

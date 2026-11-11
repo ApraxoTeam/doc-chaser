@@ -1,0 +1,14 @@
+{
+  "name": "apraxo-plugins",
+  "description": "Plugins from Apraxo for professional-services firms: client intake, document collection and compliance paperwork.",
+  "owner": {
+    "name": "Apraxo"
+  },
+  "plugins": [
+    {
+      "name": "client-intake-kit",
+      "source": "./",
+      "description": "Document request lists, received-document checks, client reminders, gift letters, TRID dates, a Safeguards Rule gap check and a WISP draft for professional-services firms."
+    }
+  ]
+}

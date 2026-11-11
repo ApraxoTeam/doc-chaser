@@ -1,0 +1,352 @@
+{
+  "id": "tax-individual-1040",
+  "title": "Individual tax return (Form 1040) document request",
+  "industry": "tax",
+  "jurisdiction": "US federal",
+  "note": "Built from the IRS list of what to gather before filing. State returns and unusual situations need more items.",
+  "sources": {
+    "irs": {
+      "name": "IRS, Gather your documents",
+      "url": "https://www.irs.gov/filing/gather-your-documents"
+    },
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "wages": "Had a job with a W-2",
+    "self-employed": "Freelance, gig or business income",
+    "investments": "Interest, dividends or sold investments",
+    "digital-assets": "Bought, sold or received digital assets",
+    "retirement": "Took money from a pension, annuity or IRA",
+    "social-security": "Received Social Security benefits",
+    "unemployment": "Received unemployment or other government payments",
+    "gambling": "Had gambling or lottery winnings",
+    "marketplace-insurance": "Had Health Insurance Marketplace coverage",
+    "dependents": "Paid for child or dependent care",
+    "homeowner": "Owns a home",
+    "itemizing": "Expects to itemize deductions",
+    "charity": "Gave to charity",
+    "hsa": "Contributed to an HSA or FSA",
+    "education": "Paid tuition or is an educator",
+    "retirement-contributions": "Contributed to a retirement account",
+    "estimated-payments": "Made estimated tax payments",
+    "new-client": "New client of the firm"
+  },
+  "sections": [
+    {
+      "name": "Identity and filing details",
+      "items": [
+        {
+          "id": "ssn",
+          "label": "Social Security numbers or ITINs for everyone on the return",
+          "detail": "Send through the secure portal, never by plain email.",
+          "when": [],
+          "basis": "irs"
+        },
+        {
+          "id": "names-address",
+          "label": "Legal names as shown with the Social Security Administration, and current address",
+          "detail": "",
+          "when": [],
+          "basis": "irs"
+        },
+        {
+          "id": "bank",
+          "label": "Bank routing and account number for refund or payment",
+          "detail": "",
+          "when": [],
+          "basis": "irs"
+        },
+        {
+          "id": "ip-pin",
+          "label": "IRS Identity Protection PIN, if one was issued",
+          "detail": "",
+          "when": [],
+          "basis": "irs"
+        },
+        {
+          "id": "prior-return",
+          "label": "Last year's tax return (shows prior-year AGI)",
+          "detail": "Complete federal and state returns.",
+          "when": [
+            "new-client"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "photo-id",
+          "label": "Government-issued photo ID for each taxpayer",
+          "detail": "Firm policy item for identity checks.",
+          "when": [
+            "new-client"
+          ],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Income",
+      "items": [
+        {
+          "id": "w2",
+          "label": "Form W-2 from each employer (or corrected W-2c)",
+          "detail": "",
+          "when": [
+            "wages"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-nec",
+          "label": "Forms 1099-NEC for freelance or contractor income",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-k",
+          "label": "Forms 1099-K from payment cards, apps or marketplaces",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-misc",
+          "label": "Forms 1099-MISC for other income",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-int",
+          "label": "Forms 1099-INT for interest",
+          "detail": "",
+          "when": [
+            "investments"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-div",
+          "label": "Forms 1099-DIV for dividends and distributions",
+          "detail": "",
+          "when": [
+            "investments"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-b",
+          "label": "Brokerage statements (Form 1099-B) for sales of investments",
+          "detail": "Consolidated year-end statement from each brokerage.",
+          "when": [
+            "investments"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "digital-assets",
+          "label": "Records of digital asset transactions",
+          "detail": "Needed even where no information return was issued.",
+          "when": [
+            "digital-assets"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-r",
+          "label": "Forms 1099-R for pension, annuity, retirement plan or IRA distributions",
+          "detail": "",
+          "when": [
+            "retirement"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "ssa-1099",
+          "label": "Form SSA-1099 for Social Security benefits",
+          "detail": "",
+          "when": [
+            "social-security"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "1099-g",
+          "label": "Forms 1099-G for unemployment or other government payments",
+          "detail": "",
+          "when": [
+            "unemployment"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "w2g",
+          "label": "Forms W-2G for gambling or lottery winnings",
+          "detail": "",
+          "when": [
+            "gambling"
+          ],
+          "basis": "irs"
+        }
+      ]
+    },
+    {
+      "name": "Self-employment records",
+      "items": [
+        {
+          "id": "se-statements",
+          "label": "Statements from banks, payment apps, card processors or marketplaces",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "se-income",
+          "label": "Other business income and expense records",
+          "detail": "Profit and loss summary if one exists.",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "se-mileage",
+          "label": "Receipts and mileage logs for travel, gift and car expenses",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "se-office",
+          "label": "Records of deductible office expenses",
+          "detail": "",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "irs"
+        }
+      ]
+    },
+    {
+      "name": "Deductions and credits",
+      "items": [
+        {
+          "id": "1095-a",
+          "label": "Form 1095-A, Health Insurance Marketplace Statement",
+          "detail": "",
+          "when": [
+            "marketplace-insurance"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "childcare",
+          "label": "Child or dependent care expenses",
+          "detail": "Provider name, address and taxpayer ID, and amounts paid.",
+          "when": [
+            "dependents"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "mortgage-interest",
+          "label": "Home mortgage interest and property tax records",
+          "detail": "Form 1098 and property tax bills.",
+          "when": [
+            "homeowner",
+            "itemizing"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "charity",
+          "label": "Charitable donation records",
+          "detail": "Receipts or acknowledgment letters.",
+          "when": [
+            "charity",
+            "itemizing"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "medical",
+          "label": "Healthcare expenses",
+          "detail": "",
+          "when": [
+            "itemizing"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "hsa",
+          "label": "Health savings account or flexible spending account contributions",
+          "detail": "",
+          "when": [
+            "hsa"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "education",
+          "label": "Receipts for tuition, books and education expenses",
+          "detail": "Form 1098-T if issued; educator expense receipts.",
+          "when": [
+            "education"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "retirement-contrib",
+          "label": "Retirement contribution records",
+          "detail": "",
+          "when": [
+            "retirement-contributions"
+          ],
+          "basis": "irs"
+        },
+        {
+          "id": "estimates",
+          "label": "Estimated tax payment records",
+          "detail": "Dates and amounts, federal and state.",
+          "when": [
+            "estimated-payments",
+            "self-employed"
+          ],
+          "basis": "irs"
+        }
+      ]
+    },
+    {
+      "name": "Firm paperwork",
+      "items": [
+        {
+          "id": "engagement",
+          "label": "Signed engagement letter",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "organizer",
+          "label": "Completed tax organizer or questionnaire",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    }
+  ]
+}

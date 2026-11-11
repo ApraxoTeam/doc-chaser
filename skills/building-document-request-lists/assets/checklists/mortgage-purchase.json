@@ -1,0 +1,183 @@
+{
+  "id": "mortgage-purchase",
+  "title": "Home purchase mortgage needs list",
+  "industry": "mortgage",
+  "jurisdiction": "US",
+  "note": "Core items follow the CFPB loan application packet; gift items follow the Fannie Mae Selling Guide. Lender, investor and loan-program rules add conditions.",
+  "sources": {
+    "cfpb": {
+      "name": "CFPB, Create a loan application packet",
+      "url": "https://www.consumerfinance.gov/owning-a-home/prepare/create-a-loan-application-packet/"
+    },
+    "fnma": {
+      "name": "Fannie Mae Selling Guide B3-4.3-04, Personal Gifts",
+      "url": "https://selling-guide.fanniemae.com/sel/b3-4.3-04/personal-gifts"
+    },
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "self-employed": "Self-employed borrower",
+    "gift-funds": "Part of the down payment is a gift",
+    "other-income": "Has income besides wages",
+    "name-change": "Recent name change",
+    "veteran": "Servicemember or veteran using a VA loan",
+    "counseling": "Completed housing counseling or home buyer education",
+    "under-contract": "Has a signed purchase contract",
+    "owns-property": "Owns other real estate"
+  },
+  "sections": [
+    {
+      "name": "Identity",
+      "items": [
+        {
+          "id": "id",
+          "label": "Proof of identity",
+          "detail": "Typically a driver's license or non-driver ID.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "ssn",
+          "label": "Social Security number",
+          "detail": "Send through the secure portal, never by plain email.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "name-change",
+          "label": "Name change documentation",
+          "detail": "",
+          "when": [
+            "name-change"
+          ],
+          "basis": "cfpb"
+        }
+      ]
+    },
+    {
+      "name": "Income",
+      "items": [
+        {
+          "id": "paystubs",
+          "label": "Pay stubs for the last 30 days",
+          "detail": "",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "w2",
+          "label": "W-2 forms for the last two years",
+          "detail": "",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "tax-returns",
+          "label": "Signed federal tax returns for the last two years",
+          "detail": "All pages and schedules.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "other-income",
+          "label": "Documentation of other income sources",
+          "detail": "",
+          "when": [
+            "other-income"
+          ],
+          "basis": "cfpb"
+        },
+        {
+          "id": "business-returns",
+          "label": "Business tax returns and a year-to-date profit and loss statement",
+          "detail": "Lender-specific; confirm what the program requires.",
+          "when": [
+            "self-employed"
+          ],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Assets and down payment",
+      "items": [
+        {
+          "id": "bank-statements",
+          "label": "Two most recent bank statements",
+          "detail": "All pages, every account used for the transaction.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "down-payment",
+          "label": "Down payment source documentation",
+          "detail": "Investment or savings statements showing at least two months' history of ownership.",
+          "when": [],
+          "basis": "cfpb"
+        },
+        {
+          "id": "gift-letter",
+          "label": "Signed gift letter",
+          "detail": "Must state the actual or maximum gift amount, that no repayment is expected, and the donor's name, address, telephone number and relationship to the borrower.",
+          "when": [
+            "gift-funds"
+          ],
+          "basis": "fnma"
+        },
+        {
+          "id": "gift-transfer",
+          "label": "Evidence of the gift transfer",
+          "detail": "For example the donor's check or withdrawal slip with the borrower's deposit slip, or evidence of an electronic transfer.",
+          "when": [
+            "gift-funds"
+          ],
+          "basis": "fnma"
+        }
+      ]
+    },
+    {
+      "name": "Property and program",
+      "items": [
+        {
+          "id": "contract",
+          "label": "Signed purchase contract",
+          "detail": "",
+          "when": [
+            "under-contract"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "reo",
+          "label": "Mortgage statement, tax and insurance bills for each property owned",
+          "detail": "",
+          "when": [
+            "owns-property"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "coe",
+          "label": "VA certificate of eligibility",
+          "detail": "",
+          "when": [
+            "veteran"
+          ],
+          "basis": "cfpb"
+        },
+        {
+          "id": "counseling",
+          "label": "Housing counseling or home buyer education certificate",
+          "detail": "",
+          "when": [
+            "counseling"
+          ],
+          "basis": "cfpb"
+        }
+      ]
+    }
+  ]
+}

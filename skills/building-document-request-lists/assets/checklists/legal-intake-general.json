@@ -1,0 +1,152 @@
+{
+  "id": "legal-intake-general",
+  "title": "New legal client intake request",
+  "industry": "legal",
+  "jurisdiction": "General",
+  "note": "A practice-derived operational list. It is not legal advice. The responsible lawyer decides what the matter needs and what the firm's bar or law society requires.",
+  "sources": {
+    "practice": {
+      "name": "Common practice",
+      "url": ""
+    }
+  },
+  "situations": {
+    "organization": "Client is a company or other organization",
+    "litigation": "Matter is a dispute or litigation",
+    "transaction": "Matter is a transaction or contract",
+    "deadline": "A court date, limitation period or other deadline is known",
+    "prior-counsel": "Another lawyer worked on the matter before"
+  },
+  "sections": [
+    {
+      "name": "Client identity",
+      "items": [
+        {
+          "id": "id",
+          "label": "Government-issued photo ID for each individual client",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "contact",
+          "label": "Full legal name, address, phone and preferred contact method",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "org-docs",
+          "label": "Formation documents and proof of the signer's authority",
+          "detail": "",
+          "when": [
+            "organization"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "org-owners",
+          "label": "Names of owners, directors and officers",
+          "detail": "",
+          "when": [
+            "organization"
+          ],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Conflict check information",
+      "items": [
+        {
+          "id": "parties",
+          "label": "Names of every other party, and their lawyers if known",
+          "detail": "Used for the firm's conflict check before work starts.",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "related",
+          "label": "Names of related companies, family members or witnesses involved",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Matter documents",
+      "items": [
+        {
+          "id": "summary",
+          "label": "Short written summary of what happened and the outcome wanted",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "key-docs",
+          "label": "Contracts, letters, notices or other documents about the matter",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "court-papers",
+          "label": "Any court papers, claims or demand letters received",
+          "detail": "",
+          "when": [
+            "litigation"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "deadlines",
+          "label": "Any hearing notices or known deadlines",
+          "detail": "Send these first.",
+          "when": [
+            "deadline"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "deal-docs",
+          "label": "Term sheet, drafts and the other side's contact details",
+          "detail": "",
+          "when": [
+            "transaction"
+          ],
+          "basis": "practice"
+        },
+        {
+          "id": "prior-file",
+          "label": "Prior lawyer's name and a copy of the file",
+          "detail": "",
+          "when": [
+            "prior-counsel"
+          ],
+          "basis": "practice"
+        }
+      ]
+    },
+    {
+      "name": "Firm paperwork",
+      "items": [
+        {
+          "id": "engagement",
+          "label": "Signed engagement letter or fee agreement",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        },
+        {
+          "id": "retainer",
+          "label": "Retainer payment, if the engagement letter requires one",
+          "detail": "",
+          "when": [],
+          "basis": "practice"
+        }
+      ]
+    }
+  ]
+}
