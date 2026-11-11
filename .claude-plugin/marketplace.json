@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "client-intake-kit",
+      "name": "doc-chaser",
       "source": "./",
       "description": "Document request lists, received-document checks, client reminders, gift letters, TRID dates, a Safeguards Rule gap check and a WISP draft for professional-services firms."
     }

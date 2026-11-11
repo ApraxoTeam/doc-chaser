@@ -1,6 +1,6 @@
 <p align="center"><img src=".claude-plugin/icon.png" alt="Apraxo logo" width="120"></p>
 
-# Client Intake Kit by Apraxo
+# Doc Chaser by Apraxo
 
 Skills for the paperwork side of a professional-services firm: asking clients for the right documents, chasing what is missing, and two compliance chores that small tax and mortgage shops put off.
 
@@ -38,11 +38,11 @@ Bundled request-list templates: individual tax return (Form 1040), bookkeeping o
 In Claude Code:
 
 ```bash
-claude plugin marketplace add Travisliang001/client-intake-kit
+claude plugin marketplace add Travisliang001/doc-chaser
 ```
 
 ```bash
-claude plugin install client-intake-kit@apraxo-plugins
+claude plugin install doc-chaser@apraxo-plugins
 ```
 
 To try it from a local copy without installing:
@@ -108,7 +108,7 @@ The unit tests check the scripts against worked examples from the Regulation Z o
 
 ## Support
 
-Open an issue at https://github.com/Travisliang001/client-intake-kit/issues
+Open an issue at https://github.com/Travisliang001/doc-chaser/issues
 
 ## About Apraxo
 

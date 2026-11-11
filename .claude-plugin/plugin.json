@@ -1,16 +1,17 @@
 {
-  "name": "client-intake-kit",
-  "displayName": "Client Intake Kit by Apraxo",
-  "version": "0.2.0",
+  "name": "doc-chaser",
+  "displayName": "Doc Chaser by Apraxo",
+  "version": "0.3.0",
   "description": "Document request lists, received-document checks, client reminders, mortgage gift letters, TRID dates, a Safeguards Rule gap check and a WISP draft for tax, legal, mortgage and agency firms. Every output is a draft for a professional to review.",
   "author": {
     "name": "Apraxo",
     "url": "https://github.com/Travisliang001"
   },
-  "homepage": "https://github.com/Travisliang001/client-intake-kit",
-  "repository": "https://github.com/Travisliang001/client-intake-kit",
+  "homepage": "https://github.com/Travisliang001/doc-chaser",
+  "repository": "https://github.com/Travisliang001/doc-chaser",
   "license": "MIT",
   "keywords": [
+    "doc-chaser",
     "client-intake",
     "document-requests",
     "tax",
@@ -25,6 +26,6 @@
     "safeguards-rule"
   ],
   "icon": "./.claude-plugin/icon.png",
-  "supportUrl": "https://github.com/Travisliang001/client-intake-kit/issues",
-  "documentationUrl": "https://github.com/Travisliang001/client-intake-kit#readme"
+  "supportUrl": "https://github.com/Travisliang001/doc-chaser/issues",
+  "documentationUrl": "https://github.com/Travisliang001/doc-chaser#readme"
 }

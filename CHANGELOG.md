@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 (2026-11-11)
+
+- Renamed the plugin from its working name to `doc-chaser` before first listing. No skill changed.
+
 ## 0.2.0 (2026-11-11)
 
 - New skill `reviewing-received-documents`: checks what a client sent against the request list and tracks each item's status in the CSV.
