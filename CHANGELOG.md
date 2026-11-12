@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 (2026-11-11)
+
+- The plugin no longer ships any scripts. The directory will accept scripts only from Verified organizations, so the five skills that used one now carry the formula, counting procedure or rules in their instructions and reference files, with check cases.
+- `calculating-trid-deadlines`: the reference file gains the counting procedure, a holiday table for 2026 to 2028 and six check cases.
+- Removed the script unit tests; the eval suite remains.
+
 ## 0.3.2 (2026-11-11)
 
 - Repository moved to `ApraxoTeam/doc-chaser`; links and install commands updated.

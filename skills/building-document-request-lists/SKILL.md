@@ -12,27 +12,29 @@ Produce the list a firm sends a client at the start of an engagement: every docu
 
 ## Workflow
 
-1. **Pick the template.** Run `python3 scripts/build_request_list.py --list` (path relative to this skill's directory) to see the templates and their situation tags:
+1. **Pick the template.** Each one is a JSON file in `assets/checklists/` (path relative to this skill's directory):
 
-   | Template | For |
+   | Template file | For |
    |---|---|
-   | `tax-individual-1040` | US individual tax return |
-   | `bookkeeping-onboarding` | New bookkeeping client |
-   | `mortgage-purchase` | Home purchase loan |
-   | `mortgage-refinance` | Refinance |
-   | `legal-intake-general` | New legal client or matter |
-   | `agency-onboarding` | New marketing, design or web client |
+   | `tax-individual-1040.json` | US individual tax return |
+   | `bookkeeping-onboarding.json` | New bookkeeping client |
+   | `mortgage-purchase.json` | Home purchase loan |
+   | `mortgage-refinance.json` | Refinance |
+   | `legal-intake-general.json` | New legal client or matter |
+   | `agency-onboarding.json` | New marketing, design or web client |
+
+   Read the chosen file. Its `situations` object lists the situation tags and the question each one answers.
 
 2. **Find the client's situation.** Map what the user said to the template's situation tags. Ask only about tags that change the list and that the user has not already answered; ask them in one message. If the user wants the list now, build it from what is known and state which tags were assumed off.
 
-3. **Build the list.** Run the script with the tags. Do not write the list from memory: the bundled items carry their sources.
+3. **Build the list from the file.** Do not write the list from memory: the bundled items carry their sources. For each item in each section:
+   - Include it if its `when` list is empty.
+   - Include it if any tag in its `when` list applies to the client.
+   - Otherwise leave it out.
 
-   ```bash
-   python3 scripts/build_request_list.py --template tax-individual-1040 \
-     --situations wages,homeowner,itemizing --client "Jordan Lee" --due "March 1"
-   ```
+   Use each item's `label` word for word, with its `detail` in brackets after it. Keep the file's section order. Under the list, print the template's `note` and its `sources`.
 
-   Add `--format csv` for a spreadsheet or practice-management import (columns: section, item, detail, status, source), and `--output <file>` to save it.
+   Output as a Markdown checklist by default. For a spreadsheet or practice-management import, output CSV with the columns `section,item,detail,status,source`, with `status` set to `requested` and `source` set to the name of the item's `basis` in the file's `sources`.
 
 4. **Adjust, then label what was adjusted.** Add items the user asks for, or that their facts clearly call for, under a heading "Added for this client". Remove items the user says they already hold. Never silently drop a sourced item.
 

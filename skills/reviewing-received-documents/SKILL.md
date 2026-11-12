@@ -29,18 +29,9 @@ Compare what arrived with what was asked for, so the professional knows in one l
 
    When unsure whether a document passes, mark it `received` and list the doubt under "For you to confirm". Do not reject on a guess.
 
-5. **Record it.** If the list is a CSV file, update it with the script (path relative to this skill's directory), one call per changed item, then print the summary:
+5. **Record it.** If the list is a CSV file, update it in place: set each changed row's `status`, and add a `note` column (after `source`) holding the resend instruction or what was received. Change nothing else in the file. Without a CSV, present the same result as a table.
 
-   ```bash
-   python3 scripts/request_status.py set --csv list.csv --item "bank statements" \
-     --status rejected --note "March statement is missing pages 3-4; send all pages"
-   ```
-
-   ```bash
-   python3 scripts/request_status.py summary --csv list.csv
-   ```
-
-   `--item` takes a row number or text that appears in exactly one item. Without a CSV, present the same result as a table.
+   A `rejected` row must have a note. Count progress as received items out of the items that are not `not-applicable`.
 
 6. **Report.** Lead with the count ("9 of 14 received"). Then rejected items with the resend instruction, outstanding items, and "For you to confirm". Offer to draft the follow-up with `drafting-client-reminders`.
 

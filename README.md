@@ -53,13 +53,13 @@ claude --plugin-dir .
 
 ## Requirements
 
-Python 3.9 or later for the five bundled scripts. They use the standard library only; there is nothing to install. The reminder, WISP and gift-letter skills need no scripts.
+None. The plugin is instructions, reference files and data only: no scripts, no programs and nothing to install.
 
 ## What the plugin runs, sends and stores
 
-- **Runs:** five Python scripts, only when a skill calls them: `build_request_list.py`, `request_status.py`, `chasing_cost.py`, `trid_deadlines.py` and `safeguards_gap.py`. Each is plain, readable source in its skill's `scripts/` folder.
-- **Sends:** nothing. The plugin has no MCP servers, no hooks and no network calls. The scripts do not open network connections.
-- **Stores:** nothing, unless you ask for a file. `build_request_list.py --output <file>` and `safeguards_gap.py --output <file>` write to the path you give, and `request_status.py set` updates the request-list CSV you point it at.
+- **Runs:** nothing. The plugin contains no scripts, hooks or programs. Where a calculation is needed, the skill gives Claude the formula or counting method and check cases.
+- **Sends:** nothing. The plugin has no MCP servers, no hooks and no network calls.
+- **Stores:** nothing. If you ask for a file, such as a request list as CSV, Claude writes it where you ask.
 - **Collects:** no personal data, no analytics, no credentials. The skills tell Claude not to ask for passwords, account numbers or Social Security numbers.
 
 Your conversation with Claude is handled under the terms of the Claude product you use; this plugin adds no data handling of its own.
@@ -90,21 +90,17 @@ Sources were read on 2026-11-11. Rules and guides change: check the linked sourc
 - The document review checks completeness. It does not judge whether a document is genuine.
 - The chasing-cost calculator uses your numbers only. It contains no industry benchmarks.
 
-## Tests and evals
-
-```bash
-python3 -m unittest discover tests
-```
+## Checks and evals
 
 ```bash
 claude plugin validate --profile directory --strict .
 ```
 
 ```bash
-claude plugin eval . --allow-tools Bash Write
+claude plugin eval .
 ```
 
-The unit tests check the scripts against worked examples from the Regulation Z official commentary. The `evals/` folder holds nine end-to-end cases with a no-plugin baseline.
+The `evals/` folder holds nine end-to-end cases, each run with and without the plugin. The TRID reference file includes check cases from the Regulation Z official commentary.
 
 ## Support
 

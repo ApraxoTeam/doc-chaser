@@ -1,7 +1,7 @@
 {
   "name": "doc-chaser",
   "displayName": "Doc Chaser by Apraxo",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Document request lists, received-document checks, client reminders, mortgage gift letters, TRID dates, a Safeguards Rule gap check and a WISP draft for tax, legal, mortgage and agency firms. Every output is a draft for a professional to review.",
   "author": {
     "name": "Apraxo",
