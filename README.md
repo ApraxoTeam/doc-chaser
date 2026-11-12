@@ -38,7 +38,7 @@ Bundled request-list templates: individual tax return (Form 1040), bookkeeping o
 In Claude Code:
 
 ```bash
-claude plugin marketplace add Travisliang001/doc-chaser
+claude plugin marketplace add ApraxoTeam/doc-chaser
 ```
 
 ```bash
@@ -108,7 +108,7 @@ The unit tests check the scripts against worked examples from the Regulation Z o
 
 ## Support
 
-Open an issue at https://github.com/Travisliang001/doc-chaser/issues
+Open an issue at https://github.com/ApraxoTeam/doc-chaser/issues
 
 ## About Apraxo
 

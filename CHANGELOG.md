@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2 (2026-11-11)
+
+- Repository moved to `ApraxoTeam/doc-chaser`; links and install commands updated.
+
 ## 0.3.1 (2026-11-11)
 
 - Removed two manifest fields (`supportUrl`, `documentationUrl`) that the directory does not recognize. The support and documentation links remain in the README.

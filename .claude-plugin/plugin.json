@@ -1,14 +1,14 @@
 {
   "name": "doc-chaser",
   "displayName": "Doc Chaser by Apraxo",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Document request lists, received-document checks, client reminders, mortgage gift letters, TRID dates, a Safeguards Rule gap check and a WISP draft for tax, legal, mortgage and agency firms. Every output is a draft for a professional to review.",
   "author": {
     "name": "Apraxo",
-    "url": "https://github.com/Travisliang001"
+    "url": "https://github.com/ApraxoTeam"
   },
-  "homepage": "https://github.com/Travisliang001/doc-chaser",
-  "repository": "https://github.com/Travisliang001/doc-chaser",
+  "homepage": "https://github.com/ApraxoTeam/doc-chaser",
+  "repository": "https://github.com/ApraxoTeam/doc-chaser",
   "license": "MIT",
   "keywords": [
     "doc-chaser",
