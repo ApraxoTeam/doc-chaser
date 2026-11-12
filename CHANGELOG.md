@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 (2026-11-11)
+
+- Removed two manifest fields (`supportUrl`, `documentationUrl`) that the directory does not recognize. The support and documentation links remain in the README.
+
 ## 0.3.0 (2026-11-11)
 
 - Renamed the plugin from its working name to `doc-chaser` before first listing. No skill changed.
